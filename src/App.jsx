@@ -1,11 +1,9 @@
-import { useState } from 'react'
-
+import Body from "./Body"
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      
+      <Body/>
     </div>
   )
 }
