@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRef } from 'react'
+import HeaderFonts from './HeaderFonts'
 
 const Header = () => {
   const modeCircle = useRef()
@@ -13,7 +14,7 @@ const Header = () => {
       {/* font and mode */}
       <div className="fontMode">
         {/* font */}
-        <div className="font"><div className="fontName">serif</div><i className="fa-solid fa-chevron-down"></i></div>
+        <Header/>
         {/* mode */}
       <span className="headerSpace" style={{color: '#9ca3af'}}>|</span>
       <div className="modeToggle">

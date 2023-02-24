@@ -50,13 +50,11 @@ header{
   gap: 3rem;
 }
 .font{
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
   background: var(--main-one);
   cursor: pointer;
-  padding: .6rem .9rem;
+  padding: .8rem .9rem;
   border-radius: 1rem;
+  color: var(--pure-dark);
 }
 /*  */
 .modeToggle{
