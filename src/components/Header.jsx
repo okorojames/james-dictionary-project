@@ -1,6 +1,12 @@
 import React from 'react'
+import { useRef } from 'react'
 
 const Header = () => {
+  const modeCircle = useRef()
+  function modeToggle() {
+    modeCircle.current.classList.toggle('modeToggle')
+    document.body.classList.toggle('modeColor')
+  }
   return (
     <header>
       <i className="ri-book-2-line header-icon"></i>
@@ -11,7 +17,7 @@ const Header = () => {
         {/* mode */}
       <span className="headerSpace" style={{color: '#9ca3af'}}>|</span>
       <div className="modeToggle">
-        <div className="mode"><div className="modeCircle"></div></div>
+        <div className="mode" onClick={modeToggle}><div className="modeCircle" ref={modeCircle}></div></div>
         <div className="modeIcon">
           <i className="ri-moon-fill darkMode"></i>
           <i className="ri-sun-line lightMode"></i>

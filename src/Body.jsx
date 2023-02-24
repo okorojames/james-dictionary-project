@@ -3,9 +3,9 @@ import Header from './components/Header'
 
 const Body = () => {
   return (
-    <body className='container'>
+    <main className='container'>
       <Header/>
-    </body>
+    </main>
   )
 }
 
