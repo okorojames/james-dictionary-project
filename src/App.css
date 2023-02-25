@@ -4,6 +4,7 @@
 :root{
   --pure-light: #ffffff;
   --light-two: #f1f5f9;
+  --light-three: #e7ecf2;
   --main-one: #d8b4fe;
   --main-two: #e9d5ff;
   --main-three: #ae64fd;
@@ -11,6 +12,7 @@
   --dark-two: #2e3642;
   --dark-three: #9ca3af;
   --pure-dark: #05011e;
+  --pure-dark2: #0e073e;
 }
 /*  */
 *{
@@ -38,6 +40,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5rem;
 }
 .header-icon{
   font-size: 3rem;
@@ -76,6 +79,11 @@ header{
   transition: all .5s;
   opacity: 0;
   pointer-events: none;
+  box-shadow: 0 2px 10px var(--pure-dark2);
+  cursor: initial;
+}
+.fontNameList{
+  cursor: pointer;
 }
 /*  */
 .modeToggle{
@@ -145,3 +153,36 @@ header{
   color: var(--pure-light);
   background: var(--pure-dark);
 }
+/* 
+ */
+ /* 
+  */
+  .inputFormDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputWordForm{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background: var(--light-three);
+    border-radius: 8px;
+    padding: .5rem 1rem;
+  }
+  .searchWordInput{
+    width: 100%;
+    padding: .6rem 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+  }
+  .searchWordIcon{
+    font-size: 2.4rem;
+    color: var(--main-three);
+    cursor: pointer;
+  }
