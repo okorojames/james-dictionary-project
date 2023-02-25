@@ -162,6 +162,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
   }
   .inputWordForm{
     width: 100%;
@@ -199,7 +200,7 @@ header{
   }
   @media screen and (max-width: 576px){
     header{
-      padding: 1rem 3rem;
+      padding: 1rem 1.2rem;
     }
     .container{
       width: 95%;
