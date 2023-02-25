@@ -81,6 +81,7 @@ header{
   transition: all .5s;
 }
 .modeIcon{
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -88,9 +89,13 @@ header{
 }
 .darkMode, .lightMode{
   font-size: 2rem;
+  position: absolute;
+  transition: all .5s;
 }
 .lightMode{
+  opacity: 0;
   animation: rotateLightMode 6s infinite;
+  pointer-events: none;
 }
 @keyframes rotateLightMode{
   from{
@@ -102,6 +107,10 @@ header{
 }
 .modeToggle.modeCircle{
   margin-left: 25px;
+}
+.iconToggle{
+  opacity: 1;
+  pointer-events: all;
 }
 .modeColor{
   color: var(--pure-light);

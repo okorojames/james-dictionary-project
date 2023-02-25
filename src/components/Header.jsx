@@ -4,9 +4,13 @@ import HeaderFonts from './HeaderFonts'
 
 const Header = () => {
   const modeCircle = useRef()
+  const lightMode = useRef()
+  const darkMode = useRef()
   function modeToggle() {
     modeCircle.current.classList.toggle('modeToggle')
     document.body.classList.toggle('modeColor')
+    lightMode.current.classList.toggle('iconToggle')
+    darkMode.current.classList.toggle('iconToggle')
   }
   return (
     <header>
@@ -20,8 +24,8 @@ const Header = () => {
       <div className="modeToggle">
         <div className="mode" onClick={modeToggle}><div className="modeCircle" ref={modeCircle}></div></div>
         <div className="modeIcon">
-          <i className="ri-moon-fill darkMode"></i>
-          <i className="ri-sun-line lightMode"></i>
+          <i className="ri-moon-fill mode-icon darkMode" ref={darkMode}></i>
+          <i className="ri-sun-line mode-icon lightMode" ref={lightMode}></i>
         </div>
       </div>
       </div>
