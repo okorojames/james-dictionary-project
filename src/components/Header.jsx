@@ -10,7 +10,7 @@ const Header = () => {
     modeCircle.current.classList.toggle('modeToggle')
     document.body.classList.toggle('modeColor')
     lightMode.current.classList.toggle('iconToggle')
-    darkMode.current.classList.toggle('iconToggle')
+    darkMode.current.classList.toggle('iconToggle2')
   }
   return (
     <header>
