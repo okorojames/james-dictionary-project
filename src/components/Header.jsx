@@ -14,7 +14,7 @@ const Header = () => {
       {/* font and mode */}
       <div className="fontMode">
         {/* font */}
-        <Header/>
+        <HeaderFonts/>
         {/* mode */}
       <span className="headerSpace" style={{color: '#9ca3af'}}>|</span>
       <div className="modeToggle">
