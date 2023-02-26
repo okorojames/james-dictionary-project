@@ -8,7 +8,6 @@ const HeaderFonts = () => {
   }
   return (
     <div className='font' onClick={onClickFont}>
-      <span className="fontName">
       {'serif'}
       <span className="fontNameLists" ref={fontNameLists}>
          <span className="fontNameList">Rubik</span>
@@ -16,7 +15,7 @@ const HeaderFonts = () => {
          <span className="fontNameList">Montserrat</span>
          <span className="fontNameList">Raleway</span>
       </span>
-    </span><i className="fa-solid fa-chevron-down"></i></div>
+    <i className="fa-solid fa-chevron-down"></i></div>
   )
 }
 

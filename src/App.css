@@ -84,6 +84,10 @@ header{
 }
 .fontNameList{
   cursor: pointer;
+  transition: .5s;
+}
+.fontNameList:hover,.fontNameList:active{
+  color: var(--main-one);
 }
 /*  */
 .modeToggle{
