@@ -198,8 +198,14 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 6rem;
+    flex-direction: column;
+  }
+  .keyword--and--icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
   }
   .firstSecText{
     display: flex;
