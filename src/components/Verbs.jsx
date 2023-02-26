@@ -1,10 +1,10 @@
 import React from 'react'
 
-const noun = () => {
+const Verbs = () => {
   return (
-    <div className='noun--section--container'>
+    <div className='verbs--section--container'>
       <span className="noun--and--line">
-        <p className='noun'>noun</p>
+        <p className='verb'>Verbs</p>
         <p className="line"></p>
       </span>
       {/*  */}
@@ -23,4 +23,4 @@ const noun = () => {
   )
 }
 
-export default noun
+export default Verbs

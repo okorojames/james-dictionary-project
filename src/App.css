@@ -11,6 +11,7 @@
   --dark-one: #374151;
   --dark-two: #2e3642;
   --dark-three: #9ca3af;
+  --dark-four: #828790;
   --pure-dark: #05011e;
   --pure-dark2: #0e073e;
 }
@@ -226,6 +227,54 @@ header{
   }
   .first--sec--icon:hover,.first--sec--icon:active{
     background: var(--main-one);
+  }
+  /*  */
+  .noun--section--container{
+    margin-bottom: 6rem;
+  }
+  .noun--and--line{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  .meaning{
+    color: var(--dark-four);
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+  }
+  .noun,.verb{
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .line{
+    width: 100%;
+    height: 2px;
+    background: var(--dark-three);
+  }
+  .sentences--lines{
+    display: flex;
+    align-items: flex-start;
+    gap: .8rem;
+    margin-left: 1.5rem;
+  }
+  .meaning--icon{
+    font-size: 1.3rem;
+    color: var(--main-three);
+  }
+  .meaning--and-sentences{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+  }
+  .meaning--one{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .sentence-line{
+    color: var(--dark-four);
   }
   /*  */
   /*  */
