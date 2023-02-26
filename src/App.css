@@ -188,6 +188,47 @@ header{
     cursor: pointer;
   }
   /*  */
+  .firstSectionContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .firstSecText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+  }
+  .first--sec--p--one{
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .first--sec--p--two{
+    color: var(--main-three);
+    font-style: italic;
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+  .first--sec--icon{
+    font-size: 2.5rem;
+    color: var(--main-three);
+    background: var(--main-two);
+    padding: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .first--sec--icon:hover,.first--sec--icon:active{
+    background: var(--main-one);
+  }
+  /*  */
+  /*  */
+  /*  */
+  /* MEDIA QUERIES FOR SCREEN RESPONSIVENESS */
+  /*  */
+  /*  */
+  /*  */
   @media screen and (max-width: 998px){
     .container{
       width: 60%;
