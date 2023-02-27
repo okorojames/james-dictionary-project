@@ -11,15 +11,14 @@ const Body = () => {
     e.preventDefault();
     const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${text}`)
     const data = await res.json()
-    setWordMeaning(data)
+    setWordMeaning(data[0])
     console.log(data)
-    console.log(text)
   }
   return (
     <main className='container'>
       <Header />
       <InputWord setText={setText} getWordMeaning={getWordMeaning} />
-      <FirstSection wordMeaning={wordMeaning} />
+      {wordMeaning && <FirstSection wordMeaning={wordMeaning} />}
     </main>
   )
 }
