@@ -282,6 +282,7 @@ header{
   }
   .sentence-line{
     color: var(--dark-four);
+    margin-bottom: 4rem;
   }
   /*  */
   .my--dictionary--footer{

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import FirstSection from './components/FirstSection'
+import Answer from './components/Answer'
 import Header from './components/Header'
 import InputWord from './components/InputWord'
 
@@ -12,13 +12,12 @@ const Body = () => {
     const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${text}`)
     const data = await res.json()
     setWordMeaning(data[0])
-    console.log(data)
   }
   return (
     <main className='container'>
       <Header />
       <InputWord setText={setText} getWordMeaning={getWordMeaning} />
-      {wordMeaning && <FirstSection wordMeaning={wordMeaning} />}
+      {wordMeaning && <Answer wordMeaning={wordMeaning} />}
     </main>
   )
 }
