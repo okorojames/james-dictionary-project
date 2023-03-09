@@ -302,13 +302,12 @@ header {
   color: var(--main-three);
 }
 /*  */
-.synonyms:last-child,
-.antonyms:last-child {
-  display: none;
+.synonymsAntonyms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.synonym:nth-child(3) {
-  display: none;
-}
+
 .synonym {
   display: flex;
   flex-direction: column;
