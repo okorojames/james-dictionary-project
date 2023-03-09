@@ -56,11 +56,13 @@ const Answer = ({ wordMeaning }) => {
                 letterSpacing: "1.4px",
                 fontWeight: "700",
                 color: "#2e3642",
+                marginBottom: "8px",
               }}
             >
               SYNONYMS
             </p>
-            <span className="synonym">{meaning.synonyms}</span>
+            {meaning.synonyms.length > 0 &&
+              meaning.synonyms.map((synonym) => <p>{synonym.synonym}</p>)}
           </div>
         ))}
     </div>

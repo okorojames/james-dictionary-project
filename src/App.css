@@ -302,9 +302,6 @@ header {
   color: var(--main-three);
 }
 /*  */
-.synonyms:last-child {
-  display: none;
-}
 .synonym {
   display: flex;
   flex-direction: column;
