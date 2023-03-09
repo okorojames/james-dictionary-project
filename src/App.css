@@ -306,6 +306,9 @@ header {
 .antonyms:last-child {
   display: none;
 }
+.synonym:nth-child(3) {
+  display: none;
+}
 .synonym {
   display: flex;
   flex-direction: column;
