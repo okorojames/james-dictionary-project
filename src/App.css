@@ -1,7 +1,7 @@
 /* FONT TYPE */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
 /* COLORS */
-:root{
+:root {
   --pure-light: #ffffff;
   --light-two: #f1f5f9;
   --light-three: #e7ecf2;
@@ -16,45 +16,45 @@
   --pure-dark2: #0e073e;
 }
 /*  */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-body{
-  font-family: 'Rubik', sans-serif;
+body {
+  font-family: "Rubik", sans-serif;
   color: var(--dark-two);
   font-size: 1.6rem;
-  transition: all .5s;
+  transition: all 0.5s;
   margin-bottom: 6rem;
 }
-.container{
+.container {
   width: 50%;
   margin: 0 auto;
   margin-top: 2%;
 }
 /* HEADER STYLES */
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
 }
-.header-icon{
+.header-icon {
   font-size: 3rem;
   color: var(--dark-three);
 }
-.fontMode{
+.fontMode {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
 }
-.font{
+.font {
   position: relative;
   display: flex;
   align-items: center;
@@ -62,11 +62,11 @@ header{
   gap: 1rem;
   background: var(--main-one);
   cursor: pointer;
-  padding: .8rem .9rem;
+  padding: 0.8rem 0.9rem;
   border-radius: 1rem;
   color: var(--pure-dark);
 }
-.fontNameLists{
+.fontNameLists {
   position: absolute;
   top: 40px;
   right: -50%;
@@ -78,27 +78,28 @@ header{
   gap: 2rem;
   padding: 1.3rem 2rem;
   border-radius: 8px;
-  transition: all .5s;
+  transition: all 0.5s;
   opacity: 0;
   pointer-events: none;
   box-shadow: 0 2px 10px var(--pure-dark2);
   cursor: initial;
 }
-.fontNameList{
+.fontNameList {
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
-.fontNameList:hover,.fontNameList:active{
+.fontNameList:hover,
+.fontNameList:active {
   color: var(--main-one);
 }
 /*  */
-.modeToggle{
+.modeToggle {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
 }
-.mode{
+.mode {
   background: var(--dark-three);
   border-radius: 10rem;
   height: 25px;
@@ -106,218 +107,231 @@ header{
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 0 .2rem;
+  padding: 0 0.2rem;
 }
-.modeCircle{
+.modeCircle {
   height: 20px;
   width: 20px;
   background: var(--pure-light);
   border-radius: 50%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.modeIcon{
+.modeIcon {
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1.2rem;
 }
-.darkMode, .lightMode{
+.darkMode,
+.lightMode {
   font-size: 2rem;
   position: absolute;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.lightMode{
+.lightMode {
   opacity: 0;
   animation: rotateLightMode 6s infinite;
   pointer-events: none;
 }
-@keyframes rotateLightMode{
-  from{
+@keyframes rotateLightMode {
+  from {
     transform: rotate(0);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
-.modeToggle.modeCircle{
+.modeToggle.modeCircle {
   margin-left: 25px;
 }
-.iconToggle{
+.iconToggle {
   opacity: 1;
   pointer-events: all;
 }
-.iconToggle2{
+.iconToggle2 {
   opacity: 0;
   pointer-events: none;
 }
-.fontToggle{
+.fontToggle {
   opacity: 1;
   pointer-events: all;
 }
-.modeColor{
+.modeColor {
   color: var(--pure-light);
   background: var(--pure-dark);
 }
 /* 
  */
- /* 
+/* 
   */
-  .inputFormDiv{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4rem;
+.inputFormDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.inputWordForm {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background: var(--light-three);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+.searchWordInput {
+  width: 100%;
+  padding: 0.6rem 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+.searchWordIcon {
+  font-size: 2.4rem;
+  color: var(--main-three);
+  cursor: pointer;
+}
+/*  */
+.firstSectionContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+  flex-direction: column;
+}
+.keyword--and--icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.firstSecText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3rem;
+}
+.first--sec--p--one {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.first--sec--p--two {
+  color: var(--main-three);
+  font-style: italic;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.first--sec--icon {
+  font-size: 2.5rem;
+  color: var(--main-three);
+  background: var(--main-two);
+  padding: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.first--sec--icon:hover,
+.first--sec--icon:active {
+  background: var(--main-one);
+}
+/*  */
+.noun--section--container {
+  margin-bottom: 6rem;
+}
+.noun--and--line {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.meaning {
+  color: var(--dark-four);
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+}
+.noun,
+.verb {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background: var(--dark-three);
+}
+.sentences--lines {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-left: 1.5rem;
+}
+.meaning--icon {
+  font-size: 1.3rem;
+  color: var(--main-three);
+}
+.meaning--and-sentences {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.meaning--one {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.sentence-line {
+  color: var(--dark-four);
+  margin-bottom: 4rem;
+}
+/*  */
+.my--dictionary--footer {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.dev--link:link,
+.dev--link:visited {
+  text-decoration: none;
+  color: var(--main-three);
+}
+/*  */
+.synonyms:last-child {
+  display: none;
+}
+.synonym {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-three);
+}
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERIES FOR SCREEN RESPONSIVENESS */
+/*  */
+/*  */
+/*  */
+@media screen and (max-width: 998px) {
+  .container {
+    width: 60%;
   }
-  .inputWordForm{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    background: var(--light-three);
-    border-radius: 8px;
-    padding: .5rem 1rem;
+}
+@media screen and (max-width: 756px) {
+  .container {
+    width: 70%;
   }
-  .searchWordInput{
-    width: 100%;
-    padding: .6rem 0;
-    outline: 0;
-    border: 0;
-    background: transparent;
+}
+@media screen and (max-width: 576px) {
+  header {
+    padding: 1rem 1.2rem;
   }
-  .searchWordIcon{
-    font-size: 2.4rem;
-    color: var(--main-three);
-    cursor: pointer;
+  .container {
+    width: 95%;
   }
-  /*  */
-  .firstSectionContainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6rem;
-    flex-direction: column;
-  }
-  .keyword--and--icon{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
-  .firstSecText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.3rem;
-  }
-  .first--sec--p--one{
-    font-size: 2.8rem;
-    font-weight: 600;
-  }
-  .first--sec--p--two{
-    color: var(--main-three);
-    font-style: italic;
-    font-size: 1.9rem;
-    font-weight: 500;
-  }
-  .first--sec--icon{
-    font-size: 2.5rem;
-    color: var(--main-three);
-    background: var(--main-two);
-    padding: 1.2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: .5s;
-  }
-  .first--sec--icon:hover,.first--sec--icon:active{
-    background: var(--main-one);
-  }
-  /*  */
-  .noun--section--container{
-    margin-bottom: 6rem;
-  }
-  .noun--and--line{
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-  }
-  .meaning{
-    color: var(--dark-four);
-    font-weight: 500;
-    margin-bottom: 1.8rem;
-  }
-  .noun,.verb{
-    font-size: 2.2rem;
-    font-weight: 600;
-    font-style: italic;
-  }
-  .line{
-    width: 100%;
-    height: 2px;
-    background: var(--dark-three);
-  }
-  .sentences--lines{
-    display: flex;
-    align-items: flex-start;
-    gap: .8rem;
-    margin-left: 1.5rem;
-  }
-  .meaning--icon{
-    font-size: 1.3rem;
-    color: var(--main-three);
-  }
-  .meaning--and-sentences{
-    display: flex;
-    flex-direction: column;
-    gap: .1rem;
-  }
-  .meaning--one{
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  .sentence-line{
-    color: var(--dark-four);
-    margin-bottom: 4rem;
-  }
-  /*  */
-  .my--dictionary--footer{
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  .dev--link:link,.dev--link:visited{
-    text-decoration: none;
-    color: var(--main-three);
-  }
-  /*  */
-  /*  */
-  /*  */
-  /* MEDIA QUERIES FOR SCREEN RESPONSIVENESS */
-  /*  */
-  /*  */
-  /*  */
-  @media screen and (max-width: 998px){
-    .container{
-      width: 60%;
-    }
-  }
-  @media screen and (max-width: 756px){
-    .container{
-      width: 70%;
-    }
-  }
-  @media screen and (max-width: 576px){
-    header{
-      padding: 1rem 1.2rem;
-    }
-    .container{
-      width: 95%;
-    }
-  }
+}
