@@ -62,7 +62,45 @@ const Answer = ({ wordMeaning }) => {
               SYNONYMS
             </p>
             {meaning.synonyms.length > 0 &&
-              meaning.synonyms.map((synonym) => <p>{synonym.synonym}</p>)}
+              meaning.synonyms.map((synonym) => (
+                <p
+                  style={{
+                    color: "#ae64fd",
+                    fontSize: "1.5rem",
+                    fontStyle: "italic",
+                  }}
+                >
+                  {synonym}
+                </p>
+              ))}
+          </div>
+        ))}
+      {/* Antonymns */}
+      {wordMeaning.meanings &&
+        meanings.map((meaning) => (
+          <div className="antonyms">
+            <p
+              style={{
+                letterSpacing: "1.4px",
+                fontWeight: "700",
+                color: "#2e3642",
+                marginBottom: "8px",
+              }}
+            >
+              ATONYMS
+            </p>
+            {meaning.antonyms.length > 0 &&
+              meaning.antonyms.map((antonym) => (
+                <p
+                  style={{
+                    color: "#ae64fd",
+                    fontSize: "1.5rem",
+                    fontStyle: "italic",
+                  }}
+                >
+                  {antonym}
+                </p>
+              ))}
           </div>
         ))}
     </div>
