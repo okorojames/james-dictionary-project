@@ -1,25 +1,16 @@
 import React from "react";
+import SynonymesAndAntonymes from "./SynonymesAndAntonymes";
+import KeywordAndIcon from "./KeywordAndIcon";
 
 const Answer = ({ wordMeaning }) => {
   const { meanings } = wordMeaning;
   return (
     <div className="firstSectionContainer">
-      <div className="keyword--and--icon">
-        <div className="firstSecText">
-          <p className="first--sec--p--one"> {wordMeaning.word} </p>
-          <p className="first--sec--p--two">
-            {wordMeaning && wordMeaning.phonetic}
-          </p>
-        </div>
-        <i className="ri-volume-up-line first--sec--icon"></i>
-      </div>
+      <KeywordAndIcon wordMeaning={wordMeaning} meanings={meanings} />
       <div className="NounsAndVerbs">
         {wordMeaning.meanings &&
-          meanings.map((meaning) => (
-            <div
-              className="noun--section--container"
-              key={meaning.partOfSpeech}
-            >
+          meanings.map((meaning, i) => (
+            <div className="noun--section--container" key={i}>
               <span className="noun--and--line">
                 <p className="noun">{meaning.partOfSpeech}</p>
                 <p className="line"></p>
@@ -27,8 +18,8 @@ const Answer = ({ wordMeaning }) => {
               <div className="meanings">
                 <p className="meaning">Meaning</p>
                 {/* meaning definition */}
-                {meaning.definitions.map((definition) => (
-                  <div className="meanings">
+                {meaning.definitions.map((definition, i) => (
+                  <div className="meanings" key={i}>
                     <span className="sentences--lines">
                       <i className="ri-checkbox-blank-circle-fill meaning--icon"></i>
                       <p className="meaning--and-sentences">
@@ -47,65 +38,7 @@ const Answer = ({ wordMeaning }) => {
             </div>
           ))}
       </div>
-      {/* synonyms and antonyms */}
-      <div className="synonymsAntonyms">
-        {/*  */}
-        {wordMeaning.meanings &&
-          meanings.map((meaning) => (
-            <div className="synonyms">
-              <p
-                style={{
-                  letterSpacing: "1.4px",
-                  fontWeight: "700",
-                  color: "#2e3642",
-                  marginBottom: "8px",
-                }}
-              >
-                SYNONYMS
-              </p>
-              {meaning.synonyms.length > 0 &&
-                meaning.synonyms.map((synonym) => (
-                  <p
-                    style={{
-                      color: "#ae64fd",
-                      fontSize: "1.5rem",
-                      fontStyle: "italic",
-                    }}
-                  >
-                    {synonym}
-                  </p>
-                ))}
-            </div>
-          ))}
-        {/* Antonymns */}
-        {wordMeaning.meanings &&
-          meanings.map((meaning) => (
-            <div className="antonyms">
-              <p
-                style={{
-                  letterSpacing: "1.4px",
-                  fontWeight: "700",
-                  color: "#2e3642",
-                  marginBottom: "8px",
-                }}
-              >
-                ATONYMS
-              </p>
-              {meaning.antonyms.length > 0 &&
-                meaning.antonyms.map((antonym) => (
-                  <p
-                    style={{
-                      color: "#ae64fd",
-                      fontSize: "1.5rem",
-                      fontStyle: "italic",
-                    }}
-                  >
-                    {antonym}
-                  </p>
-                ))}
-            </div>
-          ))}
-      </div>
+      <SynonymesAndAntonymes wordMeaning={wordMeaning} meanings={meanings} />
     </div>
   );
 };

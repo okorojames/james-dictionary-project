@@ -203,6 +203,11 @@ header {
   margin-bottom: 6rem;
   flex-direction: column;
 }
+
+.answer_content {
+  min-height: calc(98vh - 130px);
+}
+
 .keyword--and--icon {
   display: flex;
   justify-content: space-between;
@@ -313,6 +318,59 @@ header {
   flex-direction: column;
   color: var(--main-three);
 }
+
+.skeleton_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skeleton_loader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton_div_one {
+  background: rgba(187, 187, 188, 0.646);
+  height: 30px;
+  width: 100%;
+  border-radius: 6px;
+  animation: animateLoaders 1.2s alternate-reverse infinite;
+}
+
+.skeleton_div_two {
+  background: rgba(187, 187, 188, 0.646);
+  height: 18px;
+  width: 90%;
+  border-radius: 6px;
+  animation: animateLoaders 1s alternate-reverse infinite;
+}
+
+.skeleton_div_three {
+  background: rgba(187, 187, 188, 0.646);
+  height: 14px;
+  width: 60%;
+  border-radius: 6px;
+  animation: animateLoaders 1.13s alternate-reverse infinite;
+}
+
+@keyframes animateLoaders {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.error_el {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /*  */
 /*  */
 /*  */

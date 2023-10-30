@@ -11,7 +11,10 @@ const InputWord = ({ setText, getWordMeaning }) => {
             setText(e.target.value);
           }}
         />
-        <i className="ri-search-line searchWordIcon"></i>
+        <i
+          className="ri-search-line searchWordIcon"
+          onClick={getWordMeaning}
+        ></i>
       </form>
     </div>
   );
