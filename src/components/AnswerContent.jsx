@@ -8,7 +8,7 @@ const AnswerContent = ({ wordMeaning, loading, error }) => {
   //
   return (
     <div className="answer_content">
-      {noArticle && <p>No content to display 😞</p>}
+      {noArticle && !loading && <p>No content to display 😞</p>}
       {loading && <Loader />}
       {error && <ErrorEl error={error} />}
       {wordMeaning && <Answer wordMeaning={wordMeaning} />}
